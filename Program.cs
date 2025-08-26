@@ -37,7 +37,7 @@ public class Solution
     public bool DoRectanglesOverlap(List<(int x, int y, int width, int height)> rectangles)
     {
         // Convert input to Rectangle objects
-        List<Rectangle> rects = new List<Rectangle>();
+        var rects = new List<Rectangle>();
         foreach (var rect in rectangles)
         {
             rects.Add(new Rectangle(rect.x, rect.y, rect.width, rect.height));
